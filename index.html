@@ -1,171 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/132ac79689.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/132ac79689.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Profile</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <h1 class="logo">Résumé</h1>
-                <ul id="sidemenu">
-                    <li><i class="fa-solid fa-house"></i><a href="#header">Home</a></li>
-                    <li><i class="fa-solid fa-user-tie"></i><a href="#about">About</a></li>
-                    <li><i class="fa-solid fa-book"></i><a href="#education">Education</a></li>
-                    <li><i class="fa-solid fa-briefcase"></i><a href="#portfolio">Work</a></li>
-                    <li><i class="fa-solid fa-comments"></i><a href="#contact">Contact</a></li>
-                    <i class="move fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="move fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Front-End Developer</p>
-                <h1>Hi I am <span>Sonu</span><br>Dewansh From Noida</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <h1 class="logo">Résumé</h1>
+          <ul id="sidemenu">
+            <li><i class="fa-solid fa-house"></i><a href="#header">Home</a></li>
+            <li>
+              <i class="fa-solid fa-user-tie"></i><a href="#about">About</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-book"></i><a href="#education">Education</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase"></i
+              ><a href="#portfolio">Projects</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-comments"></i><a href="#contact">Contact</a>
+            </li>
+            <i
+              class="move fa-regular fa-circle-xmark"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i class="move fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>Hi I am <span>Sonu</span><br />Dewansh From Noida</h1>
         </div>
+      </div>
     </div>
     <!-- -----------about---------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpeg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I have developed a strong foundation in Front-End Developer throughout my academic career. I am very good analytical and problem-solving skills. By participating in extracurricular activities, I have also improved my interpersonal and communication abilities. Additionally, I am adaptive and prepared to take on new challenges because to my drive for lifelong learning and remaining current with industry trends. I have theoretical knowledge thanks to my academic background, but I am eager to put my talents to use in a real-world situation.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('TSkills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Achivments')">Achievments</p>
-                        <p class="tab-links" onclick="opentab('Interest')">Interest</p>
-                        <p class="tab-links" onclick="opentab('Certificate')">Certificate</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="TSkills">
-                        <ul>
-                            <li><span>Language:</span><br>C++, JAVA, OOPs, JAVASCRIPT<br>HTML, CSS, TAILWIND CSS.</li>
-                            <li><span>Framework and Libraries:</span><br>SVELTE JS, NODE JS </li>
-                            <li><span>Tools and Database:</span><br>SQL, MONGODB, POSTMAN, GITHUB, VERCEL</li>
-                            <li><span>Master ChatGPT:</span><br>Transform Your Life with AI Chatbots</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Achivments">
-                        <ul>
-                            <li><span>2020</span><br>Represented at West Bengal State Karate Championship</li>
-                            <li><span>2019 – 2020</span><br>1st DAN Black Belt, Seishinkai Shito Ryu Karate Do Federation of India</li>
-                            <li><span>2019 – 2020</span><br>Represented at 4th International Karate Championship</li>
-                            <li><span>2018 – 2019</span><br>Represented at INDO-NEPAL International Karate Championship</li>
-                            <li><span>Captain of the Team, 2017 – 2018</span><br>Represented at Open District Kho-Kho Championship</li>
-                            <li><span>Captain of the Team (6 times), 2012 – 2017</span><br>Represented at National level in Kho-Kho(KVS)</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Interest">
-                        <ul>
-                            <li><span>Interest</span><br>Coding, Sports, Photography, Travel and Exploring,<br>Community Involvement.</li>
-                            <li><span>Skills</span><br>Quick Learner, Good Listener, Teamwork, Leadership Quality,<br> Creativity, Problem Solving.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Certificate">
-                        <ul>
-                            <li><span>06/2019-07/2019</span><br>HTML & CSS Mastery: Build a website. UDEMY UC-KAZ5WDZZ</li>
-                            <li><span>02/2018-03/2018</span><br>Enhancing Soft Skills and Personality. NPTEL18HS07S4310179</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I have developed a strong foundation in front-end development
+              throughout my academic career. I have very good analytical and
+              problem-solving skills. By participating in extracurricular
+              activities, I have also improved my interpersonal and
+              communication abilities. Additionally, I am adaptive and prepared
+              to take on new challenges because of my drive for lifelong
+              learning and remaining current with industry trends. I have
+              theoretical knowledge thanks to my academic background, but I am
+              eager to put my talents to use in a real-world situation.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('TSkills')">
+                Tech Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Achivments')">
+                Achievments
+              </p>
+              <p class="tab-links" onclick="opentab('Interest')">Hobbies</p>
+              <p class="tab-links" onclick="opentab('Certificate')">
+                Certificate
+              </p>
             </div>
+            <div class="tab-contents active-tab" id="TSkills">
+              <ul>
+                <li>
+                  <span>Languages and Stylesheet Languages:</span><br />C++,
+                  Java, OOPs, HTML, JavaScript, CSS.
+                </li>
+                <li>
+                  <span>Framework and Libraries:</span><br />SVELTE JS, NODE JS,
+                  TAILWIND CSS.
+                </li>
+                <li>
+                  <span>Databases and Tools:</span><br />MONGODB, MYSQL, GITHUB,
+                  VS CODE, VERCEL, POSTMAN.
+                </li>
+                <li>
+                  <span>Master ChatGPT:</span><br />Transform Your Life with AI
+                  Chatbots
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Achivments">
+              <ul>
+                <li>
+                  <span>2020</span><br />Participated in the West Bengal State
+                  Karate Championship.
+                </li>
+                <li>
+                  <span>2019 – 2020</span><br />1st DAN Black Belt, Seishinkai
+                  Shito Ryu Karate Do Federation of India.
+                </li>
+                <li>
+                  <span>2019 – 2020</span><br />Participated in 4th
+                  International Karate Championship.
+                </li>
+                <li>
+                  <span>2018 – 2019</span><br />Participated in Indo-Nepal
+                  International Karate Championship.
+                </li>
+                <li>
+                  <span>Captain of the Team, 2017 – 2018</span
+                  ><br />Participated in Open District Kho-Kho Championship.
+                </li>
+                <li>
+                  <span>Captain of the Team (6 times), 2012 – 2017</span
+                  ><br />Participated in National level Kho-Kho (KVS).
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Interest">
+              <ul>
+                <li>
+                  <span>Hobbies</span><br />Photography, Travel and Exploring,
+                  and Community Involvement.
+                </li>
+                <li>
+                  <span>Soft Skills</span><br />Good Listener, Leadership
+                  Quality, Problem Solving.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Certificate">
+              <ul>
+                <li>
+                  <span>06/2019-07/2019</span><br />HTML & CSS Mastery: Build a
+                  website. UDEMY UC-KAZ5WDZZ
+                </li>
+                <li>
+                  <span>02/2018-03/2018</span><br />Enhancing Soft Skills and
+                  Personality. NPTEL18HS07S4310179
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- --------education-------- -->
     <div id="education">
-        <div class="container">
-            <h1 class="sub-title">Education</h1>
-            <div class="education-list">
-                <div>
-                    <i class="fa-solid fa-user-graduate"></i>
-                    <h2>Bachelor's Degree In Computer Science And Engineering.</h2><br>
-                    <p>Durgapur Institute of Advanced Technology and Management, 07/2017 - 06/2021<br>DGPA: 8.31</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h2>Higher Senior Secondary Examination.</h2><br>
-                    <p>Kendriya Vidyalaya Andal, 04/2016 - 03/2017<br>67.6%</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h2>Secondary School Examination.</h2><br>
-                    <p>Kendriya Vidyalaya Andal, 04/2014 - 03/2015<br>CGPA: 7.2</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-            </div>
+      <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="education-list">
+          <div>
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2>Bachelor's Degree in Computer Science And Engineering.</h2>
+            <br />
+            <p>
+              Durgapur Institute of Advanced Technology and Management, 07/2017
+              - 06/2021<br />DGPA: 8.31
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Higher Senior Secondary Examination.</h2>
+            <br />
+            <p>Kendriya Vidyalaya Andal, 04/2016 - 03/2017<br />67.6%</p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Secondary School Examination.</h2>
+            <br />
+            <p>Kendriya Vidyalaya Andal, 04/2014 - 03/2015<br />CGPA: 7.2</p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
         </div>
+      </div>
     </div>
     <!-- ------portfolio------ -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.jpg">
-                    <div class="layer">
-                        <h3><u>Ecommerce Website</u></h3>
-                        <p>This ecommerce website is meticulously crafted using a stack that includes Svelte for a responsive and dynamic frontend, Node.js to handle server-side operations, and a blend of HTML, JavaScript, and Tailwind CSS for a sleek and intuitive user interface. The use of Svelte ensures efficient state management and seamless interaction, while Node.js supports robust backend functionalities, facilitating secure transactions and data management. The combination of Tailwind CSS and custom styling results in a visually appealing and modern design. The website is designed to provide users with a seamless shopping experience, incorporating features like product listings, a shopping cart, and a secure checkout process. With its elegant design and smooth functionality, this ecommerce site exemplifies the synergy of these technologies to create a compelling online shopping platform.</p>
-                        <a href="https://buy-laptops.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.jpg">
-                    <div class="layer">
-                        <h3><u>Todo App</u></h3>
-                        <p>This todo app is a well-rounded web application crafted with a combination of Svelte, Node.js, HTML, JavaScript, and Tailwind CSS. The frontend, developed with Svelte, ensures a highly reactive and dynamic user interface, while the backend, powered by Node.js, manages the server-side logic. MongoDB serves as the NoSQL database for efficient storage and retrieval of todo data. The seamless deployment on Vercel ensures accessibility to users, and Git enables version control. With essential features like CRUD operations for todos and potential user authentication, the app showcases a responsive design for optimal usability across various devices. The incorporation of CORS configuration ensures secure API interactions. Overall, this todo app represents a harmonious integration of technologies to deliver a functional and user-friendly experience.</p>
-                        <a href="https://todoauth11.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.jpeg">
-                    <div class="layer">
-                        <h3><u>Weather Website</u></h3>
-                        <p>This weather website is skillfully constructed using a trifecta of technologies: HTML, JavaScript, and CSS. The HTML provides the structural foundation, defining the layout and components of the webpage. JavaScript injects interactivity and dynamic content, enabling real-time weather updates and user-friendly features. The CSS styling adds a visually pleasing touch, ensuring a polished and responsive design. Together, these technologies seamlessly collaborate to deliver a user-friendly interface that not only presents current weather information but also adapts elegantly to various devices. The result is a well-crafted weather website that effectively combines functionality with aesthetics, offering users a straightforward and visually appealing platform to stay informed about weather conditions.</p>
-                        <a href="https://project-3-azure.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.jpg" />
+            <div class="layer">
+              <h3><u>Ecommerce WebApplication</u></h3>
+              <p>
+                This e-commerce web application is meticulously crafted using a
+                stack that includes Svelte for a responsive and dynamic
+                frontend, Node.js to handle server-side operations, and a blend
+                of HTML, JavaScript, and Tailwind CSS for a sleek and intuitive
+                user interface. The use of Svelte ensures efficient state
+                management and seamless interaction, while Node.js supports
+                robust backend functionalities, facilitating secure transactions
+                and data management. The combination of Tailwind CSS and custom
+                styling results in a visually appealing and modern design. The
+                website is designed to provide users with a seamless shopping
+                experience, incorporating features like product listings, a
+                shopping cart, and a secure checkout process. With its elegant
+                design and smooth functionality, this e-commerce web application
+                exemplifies the synergy of these technologies to create a
+                compelling online shopping platform.
+              </p>
+              <a href="https://buy-laptops.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <a href="#" class="btn">See more</a>
+          </div>
+          <div class="work">
+            <img src="images/work-2.jpg" />
+            <div class="layer">
+              <h3><u>Todo WebApplication</u></h3>
+              <p>
+                This to-do web application is a well-rounded web application
+                crafted with a combination of Svelte, Node.js, HTML, JavaScript,
+                and Tailwind CSS. The frontend, developed with Svelte, ensures a
+                highly reactive and dynamic user interface, while the backend,
+                powered by Node.js, manages the server-side logic. MongoDB
+                serves as the NoSQL database for efficient storage and retrieval
+                of to-do data. The seamless deployment of Vercel ensures
+                accessibility to users, and Git enables version control. With
+                essential features like CRUD operations for todos and potential
+                users. authentication, the app showcases a responsive design for
+                optimal usability across various devices. The incorporation of
+                CORS configuration ensures secure API interactions. Overall,
+                This to-do app represents a harmonious integration of
+                technologies to deliver a functional and user-friendly
+                experience.
+              </p>
+              <a href="https://todoauth11.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.jpeg" />
+            <div class="layer">
+              <h3><u>Weather WebApplication</u></h3>
+              <p>
+                This weather web application is skillfully constructed using a
+                trifecta. of technologies: HTML, JavaScript, and CSS. The HTML
+                provides the structural foundation, defining the layout and
+                components of the webpage. JavaScript injects interactivity and
+                dynamic content, enabling real-time weather updates and
+                user-friendly features. The CSS styling adds a visually pleasing
+                touch. ensuring a polished and responsive design. Together,
+                these technologies seamlessly collaborate to deliver a
+                user-friendly interface that not only presents current weather
+                information but also adapts elegantly to various devices. The
+                result is a well-crafted weather website that effectively
+                combines functionality with aesthetics, offering users a
+                straightforward and visually appealing platform to stay informed
+                about weather conditions.
+              </p>
+              <a href="https://project-3-azure.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="#" class="btn">See more</a>
+      </div>
     </div>
     <!-- --------contact-------- -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>sonudewansh@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>8670903015, 7908066236</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/sonudewansh"><i class="fa-brands fa-github"></i></a>
-                        <a href="www.linkedin.com/in/sonu-dewansh-498b0127b"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="sonudewansh@gmail.com"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://vercel.com/sonudewanshs-projects"><i class="fa-solid fa-server"></i></a>
-                    </div>
-                    <a href="images/SONU DEWANSH RESUME.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>sonudewansh@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8670903015, 7908066236</p>
+            <div class="social-icons">
+              <a href="https://github.com/sonudewansh"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="www.linkedin.com/in/sonu-dewansh-498b0127b"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="sonudewansh@gmail.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://vercel.com/sonudewanshs-projects"
+                ><i class="fa-solid fa-server"></i
+              ></a>
             </div>
+            <a href="images/SONU DEWANSH RESUME.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </html>
